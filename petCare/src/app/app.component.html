@@ -1,5 +1,13 @@
-<div class="customer" *ngFor="let customer of customers" >
-  <span>{{ customer.name }}</span>
-  <button (click)="toggleAccordion()">Send Service</button>
-  <app-accordion *ngIf="accordionOpen" [customerId]="customer.id"></app-accordion>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col">
+      <h1>Welcome to Petcare Services</h1>
+      <p>We provide top-quality care for your beloved pets.</p>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col">
+      <button class="btn btn-primary" (click)="redirectToCustomer()">Continue</button>
+    </div>
+  </div>
 </div>

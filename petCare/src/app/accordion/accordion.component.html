@@ -1,3 +1,11 @@
-<div class="accordion">
-    <!-- Accordion content goes here -->
+<div class="customer" *ngFor="let customer of customers">
+    <span (click)="toggleAccordion()">{{ customer.name }}</span>
+    <button (click)="sendService()">Send Service</button>
+   
   </div>
+  <div class="accordion" *ngIf="accordionOpen" style="height: 1000px;">
+    <!-- Accordion content goes here -->
+    <!-- <app-accordion [customerId]="customer.id"></app-accordion> -->
+    <p>Accordion Content for</p>
+  </div>
+  
