@@ -1,0 +1,45 @@
+.customer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .customer span {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+  
+  .customer button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 0;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .customer button:hover {
+    background-color: #45a049;
+  }
+  
+  .accordion {
+    padding: 10px 0;
+    margin-left: 20px;
+    border-left: 2px solid #4CAF50;
+    display: none;
+  }
+  .customers{
+    margin: 0 auto;
+    max-width: 600px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  

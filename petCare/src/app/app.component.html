@@ -1,0 +1,5 @@
+<div class="customer" *ngFor="let customer of customers" >
+  <span>{{ customer.name }}</span>
+  <button (click)="toggleAccordion()">Send Service</button>
+  <app-accordion *ngIf="accordionOpen" [customerId]="customer.id"></app-accordion>
+</div>
